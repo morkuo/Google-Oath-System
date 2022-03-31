@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("partials/header") %>
+    <title>Login</title>
+  </head>
+  <body>
+    <%- include ("partials/nav") %>
+    <br>
+    <img src="<%= user.thumbnail %>">
+    <br>
+    <br>
+    <p>Name: <%= user.name %> </p>
+    <% if(posts != ""){ %>
+      <% for(let i=0; i < posts.length; i++){ %>
+        <table>
+          <tr><td><%= posts[i].title %></td></tr>
+          <tr><td><%= posts[i].content %></td></tr>
+          <tr><td><%= posts[i].date %></td></tr>
+          <tr><td><%= posts[i].author %></td></tr>
+        </table>
+      <% } %>  
+    <% } %> 
+  </body>
+</html>

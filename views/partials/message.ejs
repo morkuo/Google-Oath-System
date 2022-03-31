@@ -1,0 +1,26 @@
+
+<!--如果當前頁面的 res.locals 存在下列其中一個 key-value pair 則在當前頁面顯示其值-->
+
+<% if(validationFailed_msg != ""){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= validationFailed_msg %></strong>
+    </div>     
+<% } %> 
+
+<% if(foundEmail_msg != ""){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= foundEmail_msg %></strong>
+    </div>
+<% } %> 
+
+<% if(newUser_msg != ""){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= newUser_msg %></strong>
+    </div>     
+<% } %> 
+
+<% if(error_msg != ""){ %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%= error_msg %></strong>
+    </div>     
+<% } %> 
